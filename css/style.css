@@ -1,0 +1,591 @@
+@font-face {
+    font-family: WorkSuns; /* Имя шрифта */
+    src: url(../assets/font/WorkSans-Medium.ttf); /* Путь к файлу со шрифтом */
+   }
+
+   *{ 
+    box-sizing: border-box;
+    font-family: WorkSuns;
+}
+
+
+body { 
+    padding: 0;
+    margin: 0;
+}
+
+#home-header { 
+    min-height: 18.5vh;
+    width: 100%;
+    padding: 0 7.5%;
+}
+
+#home-header .navigation ul { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+#home-header .navigation li { 
+    display: inline-block;
+    width: 15%;
+    min-width: 100px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 10px  ;
+}
+.banner-content{
+    width: 40%;
+    display: inline-block; 
+    padding:calc(20% - 30px) 0;
+    margin-left: 47.5%;
+    text-align: right;
+}
+
+.show-now:hover, ul li:hover { 
+    cursor: pointer;
+}
+
+.submit { 
+    font-size: 14px;
+}
+
+.submit:hover {
+     cursor: pointer;
+}
+
+.banner-content span { 
+    color:white;
+    margin: 0 10px;
+}
+
+.banner-content img { 
+    width: 100%;
+}
+
+
+#banner { 
+   width: 100%;
+   min-height: 67vh;
+   background-image: url(../assets/image/7.png);
+   background-size: cover;
+}
+
+#starp-line{ 
+    text-align: center;
+    background-color: #E0FF04;
+    width: 100%;
+    height: 10.3vh;
+}
+
+#starp-line strong { 
+    font-size: 15px;
+    line-height: 10.3vh;
+}
+
+#new-in-slider {
+    margin-top: 21vh; 
+    width: 100%;
+    height: 53vh;
+}
+
+#x-cta-area{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1100px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.some-area-item { 
+    align-items: center;
+    width: 345px;
+    height: 345px;
+    min-height: 200px;
+    min-width: 200px;
+    margin:10px;
+}
+.mobile-logo { 
+    display: none;
+}
+
+.some-area-item { 
+    background-size: 100%;
+    transition: 0.75s;
+}
+
+.some-area-item:hover  {
+    background-size: 120%;
+}
+
+.some-area-item:nth-child(1) { 
+    background-image: url(../assets/image/1.png);   
+}
+
+.some-area-item:nth-child(2) { 
+    background-image: url(../assets/image/2.png);
+}
+
+.some-area-item:nth-child(3) { 
+    background-image: url(../assets/image/3.png);
+}
+
+.some-area-item:nth-child(4) { 
+    background-image: url(../assets/image/4.png);
+}
+
+.some-area-item:nth-child(5) { 
+    background-image: url(../assets/image/5.png);
+}
+
+.some-area-item:nth-child(6) { 
+    background-image: url(../assets/image/6.png);
+}
+
+.slider-control:hover { 
+    cursor: pointer;
+    border: 5px solid rgb(32, 218, 32);
+}
+.slider-control { 
+    width: 25px;
+    height: 35px;
+    border:5px solid #E0FF04;
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: white;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 3px;
+    height: 6px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  
+  
+  /* The container */
+.container {
+    margin-top: 5px;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+  }
+
+
+.some-area-content { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.some-area-content article { 
+    color:white;
+}
+
+article h3 { 
+    margin: 0;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+article p { 
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.yellow-line-title-template { 
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+}
+
+#best-sellers-items { 
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: flex;
+    text-align: center;
+}
+.slider .items-block {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.slider .items-block .items {
+    display: flex;
+    height: 100%;
+    transition: .25s;
+}
+.slider .prev {
+    margin: auto;
+    width: 30px;
+    height: 100%;
+}
+.slider .next {
+    margin: auto;
+    width: 30px;
+    height: 100%;
+}
+#best-sellers-items .some-seller-item { 
+    flex: none; 
+    margin: 0 20px;
+    width: 235px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+}
+
+.item-image{
+    min-height: 400px;
+}
+
+.new-image { 
+    min-height: 320px;
+}
+
+.item-info p { 
+    margin: 6px 0;
+}
+
+.item-name { 
+    color:#999999
+}
+
+.show-now { 
+    display: inline-block;
+    border-bottom: 2px solid #E0FF04;
+}
+
+
+/* #best-sellers-items div:nth-child(1) { 
+    margin-left: 0;
+}
+
+#best-sellers-items div:nth-child(4) { 
+    margin-right: 0;
+} */
+
+.some-seller-item img { 
+    width: 90%;
+    margin-left: 5%;
+}
+
+.yellow-line {
+    background: #E0FF04;
+    display: inline-block;
+    flex: 3;
+    height: 3px;
+}
+
+.yellow-line-new {
+    background: #E0FF04;
+    display: inline-block;
+    flex: 7;
+    height: 3px;
+}
+
+.yellow-line-title { 
+ flex: 1;
+ margin-top: -6px;
+}
+
+.item-info { 
+    margin-top: 20px;
+}
+
+#instagram-region {
+    position: relative;
+    margin-top: 100px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.some-photo { 
+    flex: 1; 
+    min-width: 15vw;
+    height: 15vw;
+    margin: 5px;
+}
+
+.yellow-photo-label {
+    position: absolute;
+    width: 15vw;
+    height: 10%;
+    background-color: #E0FF04;
+    margin-left: 42.5vw;
+    margin-top: 14%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+    font-size: 35px;
+}
+
+.yellow-photo-label strong { 
+    font-weight: 400;
+}
+
+.some-photo:nth-child(2) { 
+    background-image: url(../assets/image/2bbbd169675b210d40480266ff686092.png);
+    background-size: 100%;
+}
+
+
+.some-photo:nth-child(3) { 
+    background-image: url(../assets/image/2c34c5ee47b42df10dc57819a70785fc.png);
+    background-size: 100%;
+}
+
+
+.some-photo:nth-child(4) { 
+    background-image: url(../assets/image/9457929fe18d58f98d25f457d41c8ef7.png);
+    background-size: 100%;
+}
+
+
+.some-photo:nth-child(5) { 
+    background-image: url(../assets/image/12af2f3bf908e3a7fb98d126dad70874--winter-sports-winter-fun.png);
+    background-size: 100%;
+}
+
+
+.some-photo:nth-child(6) { 
+    background-image: url(../assets/image/36cdf3eb7d0237ee17174ad3b5459761--ski-outfits-ski-fashion.png);
+    background-size: 100%;
+}
+
+
+.some-photo:nth-child(7) { 
+    background-image: url(../assets/image/70s.png);
+    background-size: 100%;
+}
+
+.some-photo:nth-child(8) { 
+    background-image: url(../assets/image/DZAlTmIUMAEWWY2.png);
+    background-size: 100%;
+}
+
+
+.some-photo:nth-child(9) { 
+    background-image: url(../assets/image/La-doudoune-en-1967.png);
+    background-size: 100%;
+}
+
+
+.some-photo:nth-child(10) { 
+    background-image: url(../assets/image/photo-hans-feurer-bogner-ski-clothing-1980-1.png);
+    background-size: 100%;
+}
+
+
+.some-photo:nth-child(11) { 
+    background-image: url(../assets/image/VIm5V05x_o.png);
+    background-size: 100%;
+}
+
+.some-photo:nth-child(12) { 
+    background-image: url(../assets/image/Screen-Shot-2018-05-24-at-12.58.01.png);
+    background-size: 100%;
+}
+
+.some-photo:nth-child(13) { 
+    background-image: url(../assets/image/ScreenShot-2018-05-24-at-09.55.15.png);
+    background-size: 100%;
+}
+
+
+footer { 
+    width: 100%;
+    margin-top: 30px;
+    min-width: 200px; 
+    background-color: #E0FF04;
+    display: flex;
+}
+.sign-up ul { 
+    padding: 10px 0;
+}
+
+.footer-menu li{ 
+    display: inline-block;
+    font-size: 12px;
+    margin-right:10px;
+}
+
+footer { 
+    padding: 0 7.5%;
+}
+
+.sign-up { 
+    flex: 6;
+    padding-top:3%;
+    padding-bottom: 1%;
+}
+
+.sign-up img { 
+    width: 20%;
+}
+
+.subscribe { 
+    flex: 3;
+    font-size: 12px;
+    padding: 1% 0%;
+}
+
+.subscribe .sub { 
+    border: 1px solid white;
+    width: 100%;
+    min-height: 30px;
+}
+
+.subscribe .check { 
+    border: 1px solid white;
+    background: white;
+}
+
+.navbar { 
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+#home-header{ 
+    padding:2% 7.5% 3px 7.5%;
+}
+
+input[type='checkbox']:before {
+    background-color: white;
+    border-radius: 0;
+}
+.search, .nav-logo, .nav-login  {
+    flex: 1;
+}
+
+.nav-login { 
+
+    text-align: right;
+    font-size: 12px;
+}
+
+.nav-login img { 
+    width: 4%;
+    margin-left: 5%;
+}
+
+.nav-logo { 
+    text-align: center;
+}
+
+.nav-logo img { 
+    width: 80%;
+}
+
+.search img { 
+    width: 7%;
+    margin-top: 2px;
+}
+.search input{
+    width: 85%;
+    border:1px solid white; 
+}
+.search-input {
+    width: 50%; 
+    border-bottom: 1px solid black;
+}
+
+li{ position: relative;}
+
+.shop-submenu, .by-collection-submenu{ 
+    display: none !important;
+    position: absolute;
+    background-color: white;
+
+}
+
+.shop-by-brend:hover > .shop-submenu {
+    display: block !important;
+}
+
+
+.shop-by-collection:hover > .by-collection-submenu { 
+    display: block !important;
+}
+ul ul { 
+    padding:20px 0;
+    z-index: 2;
+}
+ul ul li{ 
+    background-color: white;
+    margin-top: 0 !important;
+}
+#mobile-menu { 
+    display:none;
+}
+ul ul li a{ 
+    line-height: 25px;
+    color:black;
+    text-decoration: none;
+}
+ul ul li a:hover{ 
+  text-decoration: underline;
+  -webkit-text-decoration-color: yellow;
+  text-decoration-color: yellow;
+}
